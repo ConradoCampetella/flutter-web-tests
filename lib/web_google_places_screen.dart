@@ -12,7 +12,7 @@ class WebGooglePlacesScreen extends StatefulWidget {
 
 class _WebGooglePlacesScreenState extends State<WebGooglePlacesScreen> {
   TextEditingController suggestController = TextEditingController();
-  final _googleKEY = 'AIzaSyCX3KrtyaEibASpYUTHmHso2r84_J5ew3U';
+  final _googleKEY = 'YOUR API KEY';
   FocusNode myFocusNode;
   List<dynamic> suggestions = [];
   var _hover;

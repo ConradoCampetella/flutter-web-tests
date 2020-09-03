@@ -18,7 +18,8 @@ class _AutoCompleteWidgetState extends State<AutoCompleteWidget> {
     "Death Certificate",
     "Marriage Certificate",
     "Power of Attorney",
-    "Will"
+    "Will",
+    "Will2",
   ];
   GlobalKey _keySuggestController = GlobalKey();
   RenderBox renderBoxSuggestController;
@@ -26,11 +27,18 @@ class _AutoCompleteWidgetState extends State<AutoCompleteWidget> {
   Size renderBoxSuggestControllerSize;
   bool _displayList = false;
 
+
   @override
   void initState() {
     suggestController.text = '';
     _scrollController.addListener(_scrollListener);
     super.initState();
+  }
+
+  @override
+  didChangeDependencies() {
+
+    super.didChangeDependencies();
   }
 
   _scrollListener() {
@@ -178,7 +186,9 @@ class _AutoCompleteWidgetState extends State<AutoCompleteWidget> {
                           ],
                         ),
                       ),
-                      Divider(),
+                      Container(
+                        decoration: BoxDecoration(border: Border(bottom: BorderSide(color: Colors.black, width: 1, style: BorderStyle.solid))),
+                      )
                     ],
                   );
                 }).toList(),
