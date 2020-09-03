@@ -1,0 +1,8 @@
+body{
+    position: relative;
+}
+#autocomplete{
+    opacity: 0;
+    position: absolute;
+    left: 5000px;
+}

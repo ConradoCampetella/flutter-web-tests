@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "build:clean": "flutter clean && flutter pub get && flutter build web",
+    "build": "flutter build web",
+    "deploy": "firebase deploy --only hosting",
+    "serve": "live-server --host=localhost --port=13000 --open= ./build/web",
+    "s2": "live-server --host=localhost --port=11000 --open= ./web2"
+  }
+}
