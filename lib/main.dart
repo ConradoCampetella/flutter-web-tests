@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:widgets/web_google_places_screen.dart';
 
 import 'auto_complete_widget.dart';
 
@@ -17,10 +16,10 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primaryColor: Colors.orange,
       ),
-     home: Scaffold(
-       appBar: AppBar(title: const Text(_title)),
-       body: AutoCompleteWidget(),
-     ),
+      home: Scaffold(
+        appBar: AppBar(title: const Text(_title)),
+        body: AutoCompleteWidget(),
+      ),
 //       home: WebGooglePlacesScreen(),
     );
   }
