@@ -194,7 +194,7 @@ class _AutoCompleteWidgetState extends State<AutoCompleteWidget> {
                       children: <Widget>[
                         ListTile(
                           title: Text(
-                            "Suggetions:",
+                            "Suggestions:",
                             style: TextStyle(fontWeight: FontWeight.w600),
                           ),
                         ),
@@ -263,7 +263,7 @@ class _AutoCompleteWidgetState extends State<AutoCompleteWidget> {
                     children: <Widget>[
                       ListTile(
                         title: Text(
-                          "Suggetions 2:",
+                          "Suggestions 2:",
                           style: TextStyle(fontWeight: FontWeight.w600),
                         ),
                       ),
